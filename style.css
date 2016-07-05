@@ -1,0 +1,52 @@
+.box {
+    width:100px;
+    height:100px;
+    position:relative;
+}
+
+#box1 {
+    background-color:red;
+}
+
+#box2 {
+    background-color:blue;
+}
+
+#box3 {
+    background-color:green;
+}
+
+#box4 {
+    background-color:black;
+}
+
+#box5 {
+    background-color:orange;
+    left:50%;
+    /* Hack to force main thread scrolling. */
+    -webkit-clip-path: circle(30px at 35px 35px);
+}
+
+#box6 {
+    background-color:papayawhip;
+    left:50%;
+}
+
+label {
+    display:block;
+}
+
+#box4 video {
+    width:100px;
+    height:100px;
+}
+
+.scroller {
+    overflow:scroll;
+    width:66%;
+    background-color:#ddd;
+}
+
+.scroll_contents {
+    width:3000px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Frame Throughput Test</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script>
+</head>
+
+<body>
+<form id="form" action="">
+<label> <input type="radio" name="animate" value="raf" checked="true"/> rAF </label>
+<label> <input type="radio" name="animate" value="main_css"/> Main thread CSS </label>
+<label> <input type="radio" name="animate" value="compositor_css"/> Compositor thread CSS </label>
+<label> <input type="radio" name="animate" value="video"/> Video </label>
+<label> <input type="radio" name="animate" value="ALL"/> All </label>
+<label> <input type="radio" name="animate" value="NONE"/> Manual </label>
+<label> <input type="checkbox" name="jank" value="jank"/> Add Jank </label>
+</form>
+
+<div id="box1" class="box"></div>
+<div id="box2" class="box"></div>
+<div id="box3" class="box"></div>
+<div id="box4" class="box"><video loop src="https://zippy.gfycat.com/PoorFeistyBergerpicard.webm"/></div>
+<div class="scroller" id="main_scroller"><div class="scroll_contents"> <div id="box5" class="box"></div></div></div>
+<div class="scroller" id="compositor_scroller"><div class="scroll_contents"><div id="box6" class="box"></div></div></div>
+</body>
+</html>
